@@ -1,0 +1,60 @@
+.section-team{
+  background: #f7f7f7;
+  position: relative;
+  z-index: -2;
+  &:before{
+    background: white;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 210px;
+    width: 100%;
+    bottom: 100%;
+    position: absolute;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+    z-index: -1;
+  }
+}
+
+.team-item{
+  height: 580px;
+  background: yellow;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.07);
+
+  &__header{
+    height: 250px;
+    position: relative;
+
+  }
+  &__header-mask{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: $blue;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+    // position: relative; 
+  }
+  &__avatar{
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom:-50px;
+    z-index: 12;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  &__price{
+    padding-top: 50px;
+  }
+  // &__footer{}
+  // &__text{}
+  &:hover{
+    background: red;
+  }
+}
+

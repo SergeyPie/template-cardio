@@ -1,0 +1,34 @@
+$btn-border-width:2px;
+$btn-height:50px;
+$btn-width-lg:240px;
+$btn-width-md:120px;
+
+.btn{
+  display: inline-block;
+	text-decoration: none;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  padding:15px 30px;
+  box-sizing:border-box;
+  color:#ffffff;
+  //===== COLORS =====
+  &_blue{ @include btn-style($blue,$blue-hover); }
+
+  //===== SIZES =====
+  &_md{
+    min-width: $btn-width-md;
+    height:55px;
+  }
+  &_lg{
+    min-width: $btn-width-lg;
+    height:60px;
+  }
+}
+
+

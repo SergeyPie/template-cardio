@@ -1,0 +1,47 @@
+@mixin font-options($font-size, $line-height, $font-weight: 300) {
+	font-size: $font-size;	
+	font-weight: $font-weight;
+	line-height: $line-height;
+}
+
+@mixin btn-settings() {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 100px;
+	border: none;
+	cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  font-family: Open Sans,Arial,sans-serif;
+  padding:15px 30px;
+  box-sizing:border-box;
+}
+
+@mixin btn-style($color, $color-hover) {
+  border: 2px solid $color;
+  color:#ffffff;
+  background: $color;
+  &:hover{
+    background: $color-hover;
+    border: 2px solid $color-hover;
+  }
+  &:disabled{
+    opacity: 0.5;
+    pointer-events: none
+  }
+  &.transparent{
+    background:transparent;
+    color:$color;
+    &:hover{
+      color:$color-hover;
+      border: 2px solid $color-hover;
+    }
+  }
+}
+
+@mixin btn-form($border-radius) {
+	border-radius: $border-radius;
+}
