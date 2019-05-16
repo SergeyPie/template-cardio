@@ -1,19 +1,21 @@
 .section-team{
   background: #f7f7f7;
   position: relative;
-  z-index: -2;
+  margin-top: 200px;
+  padding-top: 0px;
+  // z-index: -2;
   &:before{
     background: white;
     bottom: 0;
     content: '';
     display: block;
-    height: 210px;
+    height: 250px;
     width: 100%;
     bottom: 100%;
     position: absolute;
-    transform: skewY(-5deg);
-    transform-origin: 100%;
-    z-index: -1;
+    background: linear-gradient(-5deg, #f7f7f7 50%, transparent 50.2%);
+
+    // z-index: -1;
   }
 }
 
