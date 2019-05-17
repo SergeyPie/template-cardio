@@ -24,6 +24,7 @@
   border: 2px solid $color;
   color:#ffffff;
   background: $color;
+  // transition: 1.3s;
   &:hover{
     background: $color-hover;
     border: 2px solid $color-hover;
@@ -36,8 +37,9 @@
     background:transparent;
     color:$color;
     &:hover{
-      color:$color-hover;
-      border: 2px solid $color-hover;
+      color:white;
+      background: $color;
+      border: 2px solid $color;
     }
   }
 }

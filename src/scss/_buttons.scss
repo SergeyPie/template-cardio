@@ -17,6 +17,8 @@ $btn-width-md:120px;
   padding:15px 30px;
   box-sizing:border-box;
   color:#ffffff;
+  transition: 0.3s;
+
   //===== COLORS =====
   &_blue{ @include btn-style($blue,$blue-hover); }
 

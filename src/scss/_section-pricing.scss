@@ -1,0 +1,16 @@
+.section-pricing{
+  background: no-repeat url('../img/pricing.jpg');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  z-index: -2;
+  &__titles{
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+
