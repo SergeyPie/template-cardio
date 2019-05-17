@@ -9,7 +9,12 @@ body{
 	overflow-x: hidden;
 	color: #2a3237;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  &.loaded{
+    opacity: 1;
+  }
 }
 .container{
   box-sizing: border-box;
