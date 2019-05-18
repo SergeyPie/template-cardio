@@ -13,7 +13,8 @@ const clean = require('gulp-clean');
 const browserSync = require('browser-sync').create();
 const notify = require('gulp-notify');
 const concat = require('gulp-concat');
-
+const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
 
 
 // STYLES
@@ -25,7 +26,6 @@ gulp.task("scss", function () {
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(cssnano())
-    // .pipe(rename({ suffix: '.min' }))
     .pipe(concat('main.min.css'))
     .pipe(gulp.dest('dist/css'))
     .pipe(notify({ message: 'Styles task complete' }))
@@ -36,11 +36,14 @@ gulp.task("scss", function () {
 // SCRIPTS
 gulp.task('scripts', function () {
   return gulp.src([
+    './node_modules/siema/dist/siema.min.js',
     'src/js/**/*.js'
   ])
+    .pipe(babel({
+      presets: ['@babel/preset-env']
+    }))
     .pipe(uglify())
-    .pipe(concat('main.js'))
-    .pipe(rename({ suffix: '.min' }))
+    .pipe(concat('main.minjs'))
     .pipe(gulp.dest('dist/js'))
     .pipe(notify({ message: 'Scripts task complete' }))
     .pipe(browserSync.stream());

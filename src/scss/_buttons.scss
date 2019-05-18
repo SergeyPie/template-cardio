@@ -20,8 +20,13 @@ $btn-width-md:120px;
   transition: 0.3s;
 
   //===== COLORS =====
-  &_blue{ @include btn-style($blue,$blue-hover); }
-
+  &_blue{ 
+    @include btn-style($blue,$blue-hover);
+    &:hover{
+      background: $blue-hover;
+    }
+  }
+  &_white{ @include btn-style(white,white); }
   //===== SIZES =====
   &_md{
     min-width: $btn-width-md;

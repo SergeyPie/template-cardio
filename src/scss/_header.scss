@@ -3,6 +3,7 @@
   right: 0;
   left:0;
   padding: 25px 0;
+  z-index: 2;
 }
 .nav{
   display: flex;
@@ -12,14 +13,10 @@
 .nav-logo{
   margin-right: auto;
 }
-// .nav-gamburger{
-//   height: 35px;
-//   width: 35px;
-//   background: grey;
-//   display: none;
-// }
 .nav-links{
   display: flex;
+  font-size: 16px;
+
   &__link{
     padding: 15px 30px;
     color: #ffffff;

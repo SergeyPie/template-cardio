@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=480, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="shortcut icon" href="./dist/img/heart-blue.png" type="image/png">
     <link href="./dist/css/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -26,10 +27,9 @@
                             <div class="icon-bar"></div>
                         </button>
                         <div class="nav-links">
-                            <a href="#" class="nav-links__link">Intro</a>
-                            <a href="#" class="nav-links__link">Services</a>
-                            <a href="#" class="nav-links__link">Team</a>
-                            <a href="#" class="nav-links__link">Pricing</a>
+                            <a href="#services" class="nav-links__link">Services</a>
+                            <a href="#team" class="nav-links__link">Team</a>
+                            <a href="#pricing" class="nav-links__link">Pricing</a>
                             <a href="#" class="btn btn_blue">Sign In</a>
                         </div>
                     </div>
@@ -37,14 +37,116 @@
             </div>
         </div>
     </header>
-    <section class="first-section center-xs">
-        <h3 class="text fs30 fw200 white">Take care of your body</h3>
-        <h1 class="text fs60 fw400 white">
-            <span class="first-section__title">It's the only place you have to live.</span><span class="first-section__cursor">|</span>
-        </h1>
+    <section class="first-section ">
+        <div class="container container-fluid">
+            <div class="row center-xs">
+                <div class="col-xs">
+                    <h3 class="text fs30 fw400 white">Take care of your body</h3>
+                    <h1 class="text fs60 fw400 white">
+                        <span class="first-section__title">It's the only place you have to live.</span><span
+                            class="first-section__cursor">|</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="section">
+    <section class="section-intro-tables">
+        <div class="container container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="intro-item intro-item_first">
+                        <div class="intro-item__header  text white fs18 row">
+                            <div class="col-xs-8">
+                                Today's Schedule
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="intro-item__btns">
+                                    <span onclick="nextSlide(0,this)" class="intro-item__btn"></span>
+                                    <span onclick="nextSlide(1,this)" class="intro-item__btn active"></span>
+                                    <span onclick="nextSlide(2,this)" class="intro-item__btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro-item-tables">
+                            <div class="intro-item-table">
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Early Exercise</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Muscle Building</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Cardio</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                            </div>
+                            <div class="intro-item-table">
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Early Exercise</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Muscle Building</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Cardio</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                            </div>
+                            <div class="intro-item-table">
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Early Exercise</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Muscle Building</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                                <div class="intro-item-table__row row">
+                                    <div class="col-xs-7 text white fs18">Cardio</div>
+                                    <div class="col-xs-5 end-xs text white fs18">8.00 - 10.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="intro-item intro-item_second">
+                        <div class="intro-item__header  text white fs18 row">
+                            Premium membership
+                        </div>
+                        <div class="intro-item__footer">
+                            <div class="intro-item__titles">
+                                <h5 class="text white fs24 fw200">Register Today</h5>
+                                <h5 class="text white fs24 fw500">20% Discount</h5>
+                            </div>
+                        </div>
+                        <button class="intro-item__register btn btn_white text fs18 transparent">Register</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="intro-item intro-item_third">
+                        <div class="intro-item__header  text white fs18 ">
+                            Happy Clients
+                        </div>
+                        <div class="intro-item__footer">
+                            <div class="intro-item__titles">
+                                <h5 class="text white fs24 fw200">I couldn'tbe more happy with the results</h5>
+                                <h5 class="text white fs16 fw500">Adam Jordan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="section">
         <div class="container container-fluid">
             <div class="row center-xs">
                 <div class="col-xs">
@@ -82,7 +184,7 @@
         </div>
     </section>
 
-    <section class="section section-team">
+    <section id="team" class="section section-team">
         <div class="container container-fluid">
             <div class="row center-xs">
                 <div class="col-xs">
@@ -155,7 +257,7 @@
         </div>
     </section>
 
-    <section class="section section-pricing">
+    <section id="pricing" class="section section-pricing">
         <div class="container container-fluid section-pricing__titles">
             <div class="row center-xs ">
                 <div class="col-xs">

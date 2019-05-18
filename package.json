@@ -27,9 +27,16 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^3.1.6",
-    "imagemin-pngquant": "^7.0.0"
+    "imagemin-pngquant": "^7.0.0",
+    "siema": "^1.5.1"
   },
   "devDependencies": {
-    "gulp-uncss": "^1.0.6"
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "gulp-babel": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uncss": "^1.0.6",
+    "install": "^0.12.2",
+    "npm": "^6.9.0"
   }
 }
